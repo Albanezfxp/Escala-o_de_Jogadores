@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Element in HTML with JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <div id="main-header-conteiner">
+        <div id="tittle-conteiner">
+          <h1 class="h1-costumize">Escalação do time</h1>
+        </div>
+        <div id="link-for-repository-conteiner">
+          <a class="btn_repository" href="">Link para repositorio</a>
+        </div>
+      </div>
+    </header>
+    <section id="section_conteiner">
+      <div id="main-section-conteiner">
+        <div id="h1_conteiner">
+          <h1 class="h1_item">Escalação</h1>
+        </div>
+        <div id="form_conteiner">
+          <label for="number_tshirt">Numero da camisa: </label>
+          <input type="number" name="number_tshirt" id="number_tshirt" >
+          
+          <label for="player_name">Nome: </label>
+          <input type="text" name="player_name" id="player_name" >
+          
+          <label for="position">Posição:  </label>
+          <input type="text" name="position" id="position"  >
+          
+          
+        </div>
+        <div class="button_conteiner">
+          <button class="button_costumizer" onclick="add_player()">
+            Adcionar Jogador
+          </button>
+        </div>
+
+        <div id="button_removed_conteiner">     
+               <h1 class="h1_item">Remover jogador</h1>
+          <label for="number_removed">Numero da camisa</label>
+          <input type="number" id="number_removed" name="number_removed">
+          <button class="button_costumizer" onclick="remove_player()">
+            Remover Jogador
+          </button>
+</div>
+        
+        <div id="list_conteiner">
+          <h3 id="h3_list">Jogadores</h3>
+          <ul id="ul_conteiner"><ul>
+        </div>
+      </div>
+    </section>
+    <script src="./JavaScript/index.js"></script>
+  </body>
+</html>
